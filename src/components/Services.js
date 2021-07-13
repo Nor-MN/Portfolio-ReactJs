@@ -85,16 +85,16 @@ export default function Services() {
                 <Grid container justifyContent="center" spacing={2}>
                     {/* {[0, 1, 2, 3].map((value) => ( */}
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="../../assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="../../assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="../../assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="../../assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
                     </Grid>
                     {/* ))} */}
                 </Grid>
