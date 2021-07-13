@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
+import UserImg from './../assets/user1.jpg';
 function rand() {
     return Math.round(Math.random() * 20) - 10;
 }
@@ -85,16 +86,16 @@ export default function Services() {
                 <Grid container justifyContent="center" spacing={2}>
                     {/* {[0, 1, 2, 3].map((value) => ( */}
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src={UserImg}></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src={UserImg}></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src={UserImg}></img>
                     </Grid>
                     <Grid item>
-                        <img onClick={handleOpen} className={classes.image} src="/assets/user1.jpg"></img>
+                        <img onClick={handleOpen} className={classes.image} src={UserImg}></img>
                     </Grid>
                     {/* ))} */}
                 </Grid>

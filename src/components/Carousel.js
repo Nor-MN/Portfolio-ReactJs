@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, makeStyles, Grid } from '@material-ui/core';
+import UserUImg from './../assets/user2.png';
+import UserDImg from './../assets/user1.jpg';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -25,22 +27,22 @@ function Example(props) {
         {
             name: "Ventaja #1",
             description: "Probably the most random thing you have ever seen!",
-            url: "../../assets/user1.jpg",
+            url: UserUImg,
         },
         {
             name: "Ventaja #2",
             description: "Hello World!",
-            url: "../../assets/user2.png",
+            url: UserDImg,
         },
         {
             name: "Ventaja #3",
             description: "Probably the most random thing you have ever seen!",
-            url: "../../assets/user1.jpg",
+            url: UserUImg,
         },
         {
             name: "Ventaja #4",
             description: "Hello World!",
-            url: "../../assets/user2.png",
+            url: UserDImg,
         }
     ]
 
