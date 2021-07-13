@@ -62,7 +62,7 @@ export default function Services() {
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <h2 id="simple-modal-title">Servicio</h2>
-            <img className={classes.image} src="../../assets/user1.jpg" />
+            <img className={classes.image} src={UserImg} />
             <p id="simple-modal-description">
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
             </p>
