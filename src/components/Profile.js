@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'justify',
         background: '#182453',
         color: '#ded3d1',
+        paddingTop: 40,
+        paddingBottom: 40,
         ['@media(max-width: 480px)']: {
             fontSize: 12,
         },
