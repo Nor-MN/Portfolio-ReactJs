@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: 'center',
         textDecoration: 'none',
-        margin: 30,
+        marginTop: 30,
         '& > *': {
             margin: theme.spacing(1),
         },
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         height: 160,
         fontSize: 20,
         width: 200,
+        margin: 10,
         color: '#182453',
     },
     extendedIcon: {

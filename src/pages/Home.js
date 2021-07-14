@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     contentDiv: {
         background: '#182453',
         padding: 30,
-    }
+    },
 }));
 
 function Home() {

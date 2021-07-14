@@ -11,14 +11,24 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         background: 'none',
         color: 'white',
+        ['@media(max-width: 480px)']: {
+            padding: 0,
+            margin: 0,
+        },
     },
     name: {
         color: '#FFBD59',
         fontSize: '3em',
+        ['@media(max-width: 480px)']: {
+            fontSize: '2rem',
+        },
     },
     img: {
         width: '80%',
         height: 270,
+        ['@media(max-width: 480px)']: {
+            width: '100%',
+        },
     },
 }));
 
@@ -64,7 +74,7 @@ function Item(props) {
                     <h2 className={classes.name}>{props.item.name}</h2>
                     <p>{props.item.description}</p>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs>
                     <img className={classes.img} src={props.item.url} />
 
                 </Grid>

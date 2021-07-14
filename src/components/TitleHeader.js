@@ -7,13 +7,19 @@ import logoImg from './../assets/logo2.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        marginTop: 20,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '80vh',
+        height: '100vh',
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+
+        ['@media(max-width: 340px)']: {
+            height: '80vh',
+        },
     },
     colorText: {
         color: '#FFBD59',
@@ -27,10 +33,23 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: '200',
         background: '#fafbfd25',
         fontSize: '4.5rem',
+        ['@media(max-width: 580px)']: {
+            fontSize: '3rem',
+        },
+        ['@media(max-width: 406px)']: {
+            fontSize: '2.5rem',
+        },
+        ['@media(max-width: 340px)']: {
+            fontSize: '2rem',
+        },
     },
     btnDown: {
         border: '2px solid #ccccce',
         backgroundImage: `url(${logoImg})`,
+        ['@media(max-width: 440px)']: {
+            width: 60,
+            height: 60,
+        },
     },
     goDown: {
         color: '#ccccce',

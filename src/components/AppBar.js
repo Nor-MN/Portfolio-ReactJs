@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     nav: {
         background: '#182453',
+        position: 'fixed',
     },
     imgNav: {
         height: '100px',

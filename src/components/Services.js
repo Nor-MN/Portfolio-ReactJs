@@ -4,13 +4,15 @@ import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import UserImg from './../assets/user1.jpg';
+import Divider from '@material-ui/core/Divider';
+
 function rand() {
     return Math.round(Math.random() * 20) - 10;
 }
 
 function getModalStyle() {
-    const top = 50 + rand();
-    const left = 50 + rand();
+    const top = 60 + rand();
+    const left = 60 + rand();
 
     return {
         top: `${top}%`,
@@ -36,12 +38,28 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         position: 'absolute',
-        width: '70%',
-        height: 400,
+        width: '50%',
         backgroundColor: theme.palette.background.paper,
         textAlign: 'center',
         border: 'none',
         padding: theme.spacing(2, 4, 3),
+        ['@media(max-width: 780px)']: {
+            width: '80%',
+            heigth: 'auto',
+        },
+    },
+    imageM: {
+        width: '100%',
+    },
+    descrpM: {
+        width: '100%',
+    },
+    h2M: {
+        fontSize: '1.5rem',
+        color: '#182453',
+    },
+    btnM: {
+        marginTop: 5,
     },
 }));
 
@@ -62,11 +80,20 @@ export default function Services() {
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <h2 id="simple-modal-title">Servicio</h2>
-            <img className={classes.image} src={UserImg} />
-            <p id="simple-modal-description">
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </p>
-            <Button variant="contained" color="primary" onClick={handleClose}>
+            <Grid container xs={12}>
+                <Grid item xs={6}>
+                    <img className={classes.imageM} src={UserImg} />
+                </Grid>
+                <Grid item xs className={classes.descrpM}>
+                    <p>
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                    </p>
+                </Grid>
+            </Grid>
+            <Divider />
+            <h2 className={classes.h2M}>info@sdavilacorp.com</h2>
+            <Divider />
+            <Button className={classes.btnM} variant="contained" color="primary" onClick={handleClose}>
                 Cerrar
             </Button>
         </div>

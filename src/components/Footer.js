@@ -46,13 +46,13 @@ export default function SimpleBottomNavigation() {
                     <h4>DIRECCIÓN</h4>
                     <p>0000 XXXX XXX</p>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item>
                     <h4>Redes Sociales</h4>
                     <BottomNavigationAction className={classes.icon} label="Favorites" icon={<FacebookIcon />} />
                     <BottomNavigationAction className={classes.icon} label="Nearby" icon={<InstagramIcon />} />
                     <BottomNavigationAction className={classes.icon} label="Nearby" icon={<TwitterIcon />} />
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs>
                     <h4>Formulario de Contacto</h4>
                     <Form />
                 </Grid>
