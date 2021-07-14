@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { IconButton, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import background from './../assets/abogado3.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -9,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         height: '80vh',
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
     colorText: {
         color: '#FFBD59',
@@ -20,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: '#182453',
         fontWeight: '200',
+        background: '#fafbfd25',
         fontSize: '4.5rem',
     },
     btnDown: {

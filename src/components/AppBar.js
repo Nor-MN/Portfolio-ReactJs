@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import LogoImg from './../assets/logo2.png';
+import LogoImg from './../assets/logo2.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,8 +16,15 @@ const useStyles = makeStyles((theme) => ({
     imgNav: {
         height: '100px',
     },
+    btn: {
+        color: '#ccccce',
+        fontWeight: 'bold',
+        fontSize: 15,
+        letterSpacing: 1,
+    },
     menuButton: {
         marginRight: theme.spacing(2),
+
     },
     title: {
         flexGrow: 1,
@@ -36,9 +43,9 @@ export default function ButtonAppBar() {
                     <Typography variant="h6" className={classes.title}>
                         <img className={classes.imgNav} src={LogoImg} />
                     </Typography>
-                    <Button color="inherit">Perfil</Button>
-                    <Button color="inherit">Servicios</Button>
-                    <Button color="inherit">Ventajas</Button>
+                    <Button className={classes.btn}>Perfil</Button>
+                    <Button className={classes.btn}>Servicios</Button>
+                    <Button className={classes.btn}>Ventajas</Button>
                     {/* <Button variant="outlined" color="inherit">Login</Button> */}
                 </Toolbar>
             </AppBar>

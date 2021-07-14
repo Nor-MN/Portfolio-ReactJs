@@ -1,14 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import NavigationIcon from '@material-ui/icons/Navigation';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import TimelineIcon from '@material-ui/icons/Timeline';
+import EcoIcon from '@material-ui/icons/Eco';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: 'center',
+        margin: 30,
         '& > *': {
             margin: theme.spacing(1),
         },
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     extendedIcon: {
         marginRight: theme.spacing(1),
-        fontSize: 40,
+        fontSize: 50,
         color: '#FFBD59'
     },
 }));
@@ -32,15 +32,15 @@ export default function FloatingActionButtons() {
     return (
         <div className={classes.root}>
             <Fab className={classes.fab} variant="extended">
-                <NavigationIcon className={classes.extendedIcon} />
+                <EmojiEventsIcon className={classes.extendedIcon} />
                 Logro
             </Fab>
             <Fab className={classes.fab} variant="extended">
-                <NavigationIcon className={classes.extendedIcon} />
+                <EcoIcon className={classes.extendedIcon} />
                 Logro
             </Fab>
             <Fab className={classes.fab} variant="extended">
-                <NavigationIcon className={classes.extendedIcon} />
+                <TimelineIcon className={classes.extendedIcon} />
                 Logro
             </Fab>
         </div>
