@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import LogoImg from './../assets/logo2.jpg';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,7 +42,9 @@ export default function ButtonAppBar() {
             <AppBar position="static" className={classes.nav}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        <img className={classes.imgNav} src={LogoImg} />
+                        <Link to='/'>
+                            <img className={classes.imgNav} src={LogoImg} />
+                        </Link>
                     </Typography>
                     <Button className={classes.btn}>Perfil</Button>
                     <Button className={classes.btn}>Servicios</Button>

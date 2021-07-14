@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { IconButton, Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import background from './../assets/abogado3.jpg';
+import logoImg from './../assets/logo2.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,10 +29,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '4.5rem',
     },
     btnDown: {
-        border: '2px solid',
+        border: '2px solid #ccccce',
+        backgroundImage: `url(${logoImg})`,
     },
     goDown: {
-        color: '#FFBD59',
+        color: '#ccccce',
         fontSize: '4rem',
     },
 }));

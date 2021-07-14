@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         background: 'none',
         color: 'black',
-        background: '#fafbfd',
+        background: '#e7e7e7',
     },
     icon: {
         border: '1px solid',
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#FFBD59'
     },
     copyright: {
-        background: '#282828',
+        background: '#3b3b3b',
         color: '#fafbfd',
     },
 }));

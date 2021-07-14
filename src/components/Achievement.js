@@ -4,20 +4,26 @@ import Fab from '@material-ui/core/Fab';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import EcoIcon from '@material-ui/icons/Eco';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
+    link: {
+        textDecoration: 'none',
+    },
     root: {
         textAlign: 'center',
+        textDecoration: 'none',
         margin: 30,
         '& > *': {
             margin: theme.spacing(1),
         },
     },
     fab: {
-        background: 'white',
+        background: '#f0f0f0',
         height: 160,
-        width: 200,
         fontSize: 20,
+        width: 200,
+        color: '#182453',
     },
     extendedIcon: {
         marginRight: theme.spacing(1),
@@ -31,18 +37,26 @@ export default function FloatingActionButtons() {
 
     return (
         <div className={classes.root}>
-            <Fab className={classes.fab} variant="extended">
-                <EmojiEventsIcon className={classes.extendedIcon} />
-                Logro
-            </Fab>
-            <Fab className={classes.fab} variant="extended">
-                <EcoIcon className={classes.extendedIcon} />
-                Logro
-            </Fab>
-            <Fab className={classes.fab} variant="extended">
-                <TimelineIcon className={classes.extendedIcon} />
-                Logro
-            </Fab>
+            <Link to='/logro' className={classes.link}>
+                <Fab className={classes.fab} variant="extended">
+                    <EmojiEventsIcon className={classes.extendedIcon} />
+                    Logro
+                </Fab>
+            </Link>
+
+            <Link to='/logro' className={classes.link}>
+                <Fab className={classes.fab} variant="extended">
+                    <EcoIcon className={classes.extendedIcon} />
+                    Logro
+                </Fab>
+            </Link>
+
+            <Link to='/logro' className={classes.link}>
+                <Fab className={classes.fab} variant="extended">
+                    <TimelineIcon className={classes.extendedIcon} />
+                    Logro
+                </Fab>
+            </Link>
         </div>
     );
 }
